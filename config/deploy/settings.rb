@@ -2,7 +2,7 @@ default_run_options[:pty] = true
 ssh_options[:keys] = [File.join(ENV["HOME"], ".ssh", "id_rsa")]
 
 set :application, 'snippy'
-set :branch,     "origin/master"
+set :branch,     "gitosis/master"
 set :default_stage, 'staging'
 set :deploy_to, "/srv/#{application}"
 set :current_path, "#{deploy_to}/current"

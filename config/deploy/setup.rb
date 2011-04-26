@@ -6,9 +6,9 @@ namespace 'deploy' do
   
   desc "Make the directory structure"
   task :make_path, :roles => :app do
-    sudo "mkdir -m 0775 -p #{deploy_to}/current"
+    run "mkdir -m 0775 -p #{deploy_to}/current"
     %w{config log pids system tmp db}.each do |dir|
-      sudo "mkdir -m 0775 -p #{deploy_to}/shared/#{dir}"
+      run "mkdir -m 0775 -p #{deploy_to}/shared/#{dir}"
     end
   end
 end

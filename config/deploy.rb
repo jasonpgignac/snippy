@@ -8,7 +8,6 @@ load 'config/deploy/settings'
 load 'config/deploy/clear_cache'
 load 'config/deploy/disable'
 load 'config/deploy/setup'
-load 'config/deploy/sphinx'
 load 'config/deploy/symlinks'
 
 

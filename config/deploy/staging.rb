@@ -5,4 +5,5 @@ role :app, '172.17.50.30'
 role :db, '172.17.50.30'
 set :rails_env, 'staging'
 set :repository, "git@172.17.50.13:#{application}"
+set :branch,     "origin/staging"
 set :user, "dd_deploy"
