@@ -2,10 +2,6 @@
 
 one:
   body: MyText
-  parser: MyString
-  user_id: 1
 
 two:
   body: MyText
-  parser: MyString
-  user_id: 1
